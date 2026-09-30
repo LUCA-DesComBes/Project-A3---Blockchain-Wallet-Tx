@@ -9,29 +9,72 @@
 	<body>
 		<main>
 			<hgroup>
-				<h1>Main Viewer</h1>
-				<p>
+				<h1 class="fw700 fs32">Main Viewer</h1>
+				<p class="fw400 fs16">
 					Entrez une adresse de Wallet pour visualiser l'ensemble des
 					transactions.
 				</p>
 			</hgroup>
 			<article>
 				<section class="first-sect">
-					<div>
-						<p class="adress-title">Adress Ethereum</p>
-						<input type="text" placeholder="0x..." id="ethereum-input" />
-						<button id="view-wallet">Voir le Wallet</button>
-						<p class="astuce">
-							Astuce : essayez l’adresse de Vitalik :
-							0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045
+					<p class="adress-title fw400 fs16">Address Ethereum</p>
+					<input type="text" placeholder="0x..." id="ethereum-input" />
+					<button id="view-wallet" class="view-wallet fw700 fs16">
+						Voir le Wallet
+					</button>
+					<p class="astuce fw400 fs12">
+						Astuce : essayez l’adresse de Vitalik :
+						0xd8dA6BF26964aF9D7eEd9e03E5341 5D37aA96045
+					</p>
+				</section>
+				<section class="sec-sect">
+					<h2 class="fw700 fs24">Sold ETH</h2>
+					<div class="correct">
+						<p class="crypt fw400 fs16">
+							0xd8dA6BF26964aF9D7eEd9e03E5341 <br />5D37aA96045
+						</p>
+						<p class="sold fw700 fs24">29.585487 ETH</p>
+					</div>
+					<div class="error fw400 fs16">
+						<p>Aucun résultat de recherche trouvé !</p>
+					</div>
+				</section>
+				<section class="ter-sect">
+					<h2 class="fs24 fw700">Transactions récentes</h2>
+					<div class="correct">
+						<div class="container">
+							<div class="view-div">
+								<p class="check-para check-correct fw700 fs16">IN</p>
+								<p class="bank-para fs16">0.0001 ETH</p>
+								<button class="fs16 fw700">Voir</button>
+							</div>
+							<div class="view-div">
+								<p class="check-para check-error fw700 fs16">OUT</p>
+								<p class="bank-para fs16 fw400">0.0001 ETH</p>
+								<button class="fs16 fw700">Voir</button>
+							</div>
+							<div class="view-div">
+								<p class="check-para check-correct fw700 fs16">IN</p>
+								<p class="bank-para fs16 fw400">0.5241 ETH</p>
+								<button class="fs16 fw700">Voir</button>
+							</div>
+						</div>
+					</div>
+					<div class="error fs16 fw400">
+						Aucun résultat de recherche trouvé !
+					</div>
+				</section>
+				<section class="qua-sect">
+					<h2 class="fw700 fs24">Console</h2>
+					<div class="console">
+						<p class="charging fs12 fw400 ffspace-mono">
+							<span>Erreur</span> Chargement du wallet
+						</p>
+						<p class="crypt fs12 fw400 ffspace-mono">
+							0xd8dA6BF26964aF9D7eEd9e03E53415D <br />37aA96045
 						</p>
 					</div>
 				</section>
-                <section class="sec-sect">
-                    <h2>Sold ETH</h2>
-                    <p>0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045</p>
-                    <p class="sold">29.585487 ETH</p>
-                </section>
 			</article>
 		</main>
 	</body>
